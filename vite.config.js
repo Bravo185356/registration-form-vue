@@ -8,6 +8,7 @@ import vue2 from "@vitejs/plugin-vue2";
 export default ({ mode }) => {
   const env = loadEnv(mode, process.cwd(), "");
   return defineConfig({
+    base: 'registration-form-vue',
     define: {
       "process.env": env,
     },
